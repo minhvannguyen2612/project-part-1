@@ -1,119 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureTech Solutions | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/abf7c8298f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="nav__logo">
-      <img src="./assets/image/logo.svg" alt="Company logo" />
-    </div>
-    <div class="nav__search">
-      <input type="text" placeholder="What are you looking for..." />
-      <button>
-        <i class="fa-solid fa-search"></i>
-      </button>
-    </div>
-  </nav>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <img src="./image/logo.jpg" alt="FutureTech Logo" class="nav__logo" />
+      <form class="nav__search">
+        <input type="text" placeholder="What are you looking for..." />
+<button type="submit">🔍</button>
+      </form>
+    </nav>
 
-  <!-- Header Menu -->
-  <header>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="job.html">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-  </header>
-
-  <!-- Banner -->
-  <section>
-    <img src="./assets/image/home-promo-1.webp" alt="Company banner" />
-  </section>
-
-  <!-- Main Content -->
-  <main>
-    <!-- About Company -->
-    <section>
-      <h2>About the Company</h2>
-      <p>
-        Brother IT Company is an information technology company specializing in
-        IT solutions and development. Established in 2020, we have collaborated
-        with various large and small enterprises across the country.
-        We always welcome talented individuals to join our development team,
-        and we provide growth opportunities for every position.
-      </p>
-      <button><a href="about.html">Learn More</a></button>
-    </section>
-
-    <!-- Customer Impressions -->
-    <section>
-      <h2>Leading in Quality</h2>
-      <p>
-        Information quality brings core value to both businesses and customers.
-        A fast, accurate, and easy-to-use internal management system
-        creates peace of mind for both parties.
-      </p>
-      <p>
-        Customers return to your products and services when they experience
-        professionalism and convenience. Reasons why customers come back include:
-      </p>
-      <ul>
-        <li>Friendly service and easily accessible information.</li>
-        <li>Positive response from the business when users have questions.</li>
-        <li>Accurate and trustworthy information provided to customers.</li>
-        <li>Time-saving in customer transactions.</li>
+    <!-- Header Menu -->
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__item"><a href="index.html">Home</a></li>
+        <li class="header__item"><a href="job.html">Job Information</a></li>
+        <li class="header__item"><a href="apply.html">Apply Now</a></li>
+        <li class="header__item"><a href="about.html">About Us</a></li>
       </ul>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+      <img src="/image/banner.jpg" alt="Technology banner" />
     </section>
 
-    <!-- Deployment Process -->
-    <section>
-      <h2>Deployment Process</h2>
+    <!-- Main Section -->
+    <main class="container">
+      <section class="section__title">
+        <h2>About Our Company</h2>
+      </section>
+
+      <section class="section__content">
+        <p>
+          FutureTech Solutions is an IT company that provides software
+          development, digital transformation, and business technology
+          consulting services. Our team focuses on creating innovative solutions
+          that drive growth and efficiency for enterprises worldwide.
+        </p>
+      </section>
+
+      <section class="btn">
+        <a href="about_en.html">Discover More</a>
+      </section>
+    </main>
+
+    <!-- Customer Impression -->
+    <section class="customer__impression">
+      <figure>
+        <img src="./image/logo2.jpg" alt="Client meeting" />
+      </figure>
+
+      <article>
+        <h2 class="impression__right-tittle">Leading Quality</h2>
+        <p class="impression__right-decs">
+          At FutureTech Solutions, we believe that quality is more than a promise — it’s the foundation of everything we deliver.
+  Our commitment to accuracy, transparency, and innovation ensures that every service we provide adds measurable value to your business.
+        </p>
+        <p class="impression__right-decs-1">
+          We build long-term trust with our clients by maintaining the highest standards in every project, from concept to completion.
+  Our team continuously improves processes and embraces cutting-edge technology to deliver reliable, efficient, and scalable results.
+        </p>
+        <p class="impression__right-decs-1">
+  Our vision goes beyond delivering excellent results — we strive to empower businesses through smart solutions,
+  data-driven insights, and sustainable practices. Every partnership we form is built on trust, creativity, and shared success.
+</p>
+<ul class="impression__right-list">
+  <li><i class="fa-solid fa-circle-check"></i> Trusted by global clients</li>
+  <li><i class="fa-solid fa-circle-check"></i> Professional project management</li>
+  <li><i class="fa-solid fa-circle-check"></i> Efficient and innovative solutions</li>
+  <li><i class="fa-solid fa-circle-check"></i> Commitment to long-term value</li> <!-- thêm dòng này -->
+</ul>
+      </article>
+    </section>
+
+    <!-- Work Procedure -->
+    <section class="procedure">
+      <h2 class="procedure_-title">Our Process</h2>
+      <div class="procedure__list">
+        <article class="procedure__item">
+          <figure class="procedure__item-img">
+            <img src="./image/index1.jpg" alt="Analysis step" />
+          </figure>
+          <h3 class="procedure__item-heading">1. Requirement Analysis</h3>
+          <p>We discuss your goals and analyze business requirements.</p>
+        </article>
+
+        <article class="procedure__item">
+          <figure class="procedure__item-img">
+            <img src="./image/index2.jpg" alt="Design step" />
+          </figure>
+          <h3 class="procedure__item-heading">2. System Design</h3>
+          <p>Our designers build system architecture and UX prototypes.</p>
+        </article>
+
+        <article class="procedure__item">
+          <figure class="procedure__item-img">
+            <img src="./image/index3.jpg" alt="Implementation step" />
+          </figure>
+          <h3 class="procedure__item-heading">3. Implementation</h3>
+          <p>Developers turn design concepts into real-world applications.</p>
+        </article>
+
+        <article class="procedure__item">
+          <figure class="procedure__item-img">
+            <img src="./image/index4.jpg" alt="Testing step" />
+          </figure>
+          <h3 class="procedure__item-heading">4. Testing & Deployment</h3>
+          <p>We ensure high-quality testing and deploy to production safely.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer__list">
+        <li><i class="fa-solid fa-clock"></i> Mon–Sat: 8:00 AM – 6:00 PM</li>
+        <li><i class="fa-solid fa-phone"></i> +1 555 123 4567</li>
+        <li><i class="fa-solid fa-location-dot"></i> 22 Innovation Street, New York</li>
+      </ul>
       <p>
-        Our deployment process ensures a clear understanding of your requirements,
-        optimal solution design, precise testing, and long-term maintenance.
+        Visit our
+        <a href="https://www.youtube.com/@FutureTech">Official YouTube Channel</a>
       </p>
-      <ol>
-        <li>
-          <strong>1. Requirement Survey:</strong>
-          Our consulting team will carefully discuss your ideas and needs.
-          We will create a sample interface based on your concept for free.
-        </li>
-        <li>
-          <strong>2. Design & Setup:</strong>
-          The product is developed in this stage. All designs are frequently
-          discussed with you to ensure alignment.
-        </li>
-        <li>
-          <strong>3. Testing & Implementation:</strong>
-          The product is delivered only after thorough testing and review
-          of all functions and user experiences.
-        </li>
-        <li>
-          <strong>4. Maintenance & Support:</strong>
-          We are committed to long-term maintenance and technical support whenever needed.
-        </li>
-      </ol>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <section>
-      <h3>Contact Information</h3>
-      <p>Email: minhvanve2612@gmail.com</p>
-      <p>Phone: 02873 049090 - 02866 809 879</p>
-      <p>Address: No. 2 Duong Khue Street, Hanoi</p>
-    </section>
-    <p>
-      You can learn more
-      <a href="https://youtu.be/HGGr_4OHjUo" target="_blank">here</a>.
-    </p>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

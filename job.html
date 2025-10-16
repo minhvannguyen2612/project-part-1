@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Recruitment Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | FutureTech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
-
 <body>
-  <header>
-    <h1>Welcome to Our Job Recruitment Website</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="jobs.html">Job Listings</a></li>
-        <li><a href="apply.html">Apply Now</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="enhancements.html">Enhancements</a></li>
-      </ul>
-    </nav>
+  <!-- ===== Navigation Bar ===== -->
+  <nav class="nav">
+    <img src="image/logo.png.jpg" alt="FutureTech Logo" class="nav__logo" />
+    <div class="nav__search">
+      <input type="text" placeholder="Search jobs..." />
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </nav>
+
+  <!-- ===== Header Menu ===== -->
+  <header class="header">
+    <ul class="header__list">
+      <li class="header__item"><a href="index.html">Home</a></li>
+      <li class="header__item"><a href="about.html">About</a></li>
+      <li class="header__item"><a href="job.html">Careers</a></li>
+      <li class="header__item"><a href="apply.html">Apply</a></li>
+    </ul>
   </header>
 
-  <main>
-    <section>
-      <h2>About Our Company</h2>
-      <p>We are a professional recruitment organization that connects job seekers with leading companies. Our goal is to create equal employment opportunities for everyone.</p>
-    </section>
+  <!-- ===== Job Section ===== -->
+  <section class="jobs container">
+    <h2>Join Our Team</h2>
+    <p>
+      At FutureTech Solutions, we’re always looking for talented individuals
+      who are passionate about innovation, technology, and making a difference.
+      Explore our current job openings below and take the next step in your
+      career with us.
+    </p>
 
-    <section>
-      <h2>Available Positions</h2>
+    <div class="job">
+      <h3>Front-End Developer</h3>
+      <p>
+        We’re seeking a creative and detail-oriented front-end developer to
+        design responsive and accessible web interfaces.
+      </p>
+      <p><strong>Requirements:</strong> HTML, CSS, JavaScript, React</p>
+      <p><strong>Location:</strong> Remote or Hanoi Office</p>
+      <a href="apply.html" class="btn">Apply Now</a>
+    </div>
 
-      <article>
-        <h3>Front-End Developer</h3>
-        <p>We are seeking a talented Front-End Developer with skills in HTML, CSS, and JavaScript. The ideal candidate should have strong problem-solving abilities and a passion for clean design.</p>
-      </article>
+    <div class="job">
+      <h3>UI/UX Designer</h3>
+      <p>
+        Looking for a designer who can turn complex ideas into intuitive and
+        visually stunning user experiences.
+      </p>
+      <p><strong>Requirements:</strong> Figma, Adobe XD, Design Thinking</p>
+      <p><strong>Location:</strong> Ho Chi Minh City Office</p>
+      <a href="apply.html" class="btn">Apply Now</a>
+    </div>
 
-      <article>
-        <h3>Marketing Specialist</h3>
-        <p>Join our marketing team to help design creative strategies and campaigns that reach thousands of potential clients. Experience with social media marketing is preferred.</p>
-      </article>
-    </section>
+    <div class="job">
+      <h3>Data Analyst</h3>
+      <p>
+        Join our data team to analyze trends and provide actionable insights
+        that help drive strategic business decisions.
+      </p>
+      <p><strong>Requirements:</strong> SQL, Python, Power BI</p>
+      <p><strong>Location:</strong> Remote or Hybrid</p>
+      <a href="apply.html" class="btn">Apply Now</a>
+    </div>
 
-    <aside>
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="apply.html">Submit Your Application</a></li>
-        <li><a href="jobs.html">View More Jobs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </aside>
-  </main>
+    <div class="job">
+      <h3>Project Manager</h3>
+      <p>
+        Lead cross-functional teams, manage timelines, and deliver high-quality
+        results that meet client expectations.
+      </p>
+      <p><strong>Requirements:</strong> PMP Certification, Agile, Communication</p>
+      <p><strong>Location:</strong> Hanoi Office</p>
+      <a href="apply.html" class="btn">Apply Now</a>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Job Recruitment Website. All rights reserved.</p>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <ul class="footer__list">
+      <li>© 2025 FutureTech Solutions</li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="job.html">Careers</a></li>
+      <li><a href="apply.html">Apply Now</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
   </footer>
 </body>
 </html>
