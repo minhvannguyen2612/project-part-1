@@ -87,7 +87,7 @@ h1, h2, h3, .header__item a, .nav__logo {
 /* ===== BANNER ===== */
 .banner img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   object-fit: cover;
   border-radius: 12px;
 }
